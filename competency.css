@@ -1,284 +1,500 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .header {
-    min-height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+  min-height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 .logoMain {
-    width: 18%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 35px;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 35px;
 }
 .navbar {
-    display: flex;
+  display: flex;
 }
 .nav-list {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 100%;
-    background-color: rgb(204, 205, 242);
-    display: flex;
-    align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100%;
+  background-color: rgb(204, 205, 242);
+  display: flex;
+  align-items: center;
 }
 .nav-list li {
-    font-weight: 600;
-    list-style: none;
-    padding: 25px;
+  font-weight: 600;
+  list-style: none;
+  padding: 25px;
 }
 .nav-list li a {
-    text-decoration: none;
-    color: rgb(15, 57, 90);
-    text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(15, 57, 90);
+  text-transform: uppercase;
 }
 .nav-list li a {
-    text-decoration: none;
-    color: rgb(15, 57, 90);
-    text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(15, 57, 90);
+  text-transform: uppercase;
 }
 .nav-list li a:hover {
-    text-decoration: none;
-    color: rgb(40, 23, 170);
-    text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(40, 23, 170);
+  text-transform: uppercase;
 }
 .dropdown {
-    display: inline-block;
+  display: inline-block;
 }
 
 .dropdown-content {
-    margin-top: 10px;
-    border: 2px solid #fff;
-    display: none;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.875);
-    min-width: 160px;
-    z-index: 1;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.875);
+  min-width: 160px;
+  z-index: 1;
 }
 
 .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    display: block;
-    text-align: left;
-    font-size: 14px;
-    font-weight: 300;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: lowercase;
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: lowercase;
 }
 
 .dropdown-content a:hover {
-    background-color: #8fa7adac;
-    color: black;
+  background-color: #8fa7adac;
+  color: black;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 .sub-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:  rgba(255, 255, 255, 0.875);
-    border: 2px solid #fff;
-    min-width: 160px;
-    left: 100%;
-    top: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.875);
+  border: 2px solid #fff;
+  min-width: 160px;
+  left: 100%;
+  top: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Show the submenu when hovering over the parent dropdown item */
 .dropdown-content:hover .sub-dropdown-content {
-    display: block;
+  display: block;
 }
-.competencyHeading h1 {
+/* process design style */
+.pdHeading h1 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #0b0162;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pdHeading span {
+  color: #3776e4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.pd-description h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    margin-left: 85px;
+    text-align: center;
+  }
+.pd-content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 30px;
+  background-image: url(Images/bgmain.png);
+}
+
+.pd-image {
+  flex: 1;
+}
+
+.pd-image img {
+  width: 650px;
+  height: 500px;
+}
+
+.pd-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  flex: 1;
+  margin-left: 30px;
+  margin-right: 40px;
+  line-height: 2em;
+}
+/* advanced engg style */
+.advenggHeading h1 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #0b0162;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.advenggHeading span {
+  color: #3776e4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.advengg-description h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    margin-left: 85px;
+    text-align: center;
+  }
+.advengg-content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 30px;
+  background-image: url(Images/bgmain.png);
+}
+
+.advengg-image {
+  flex: 1;
+}
+
+.advengg-image img {
+  width: 650px;
+  height: 500px;
+}
+
+.advengg-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  flex: 1;
+  margin-left: 30px;
+  margin-right: 40px;
+  line-height: 2em;
+}
+/* automation */
+.autoHeading h1 {
     margin-top: 20px;
     text-transform: uppercase;
     color: #0b0162;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
     font-size: 50px;
     text-align: center;
     margin-bottom: 10px;
-}
-.competencyHeading span {
+  }
+  .autoHeading span {
     color: #3776e4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     text-align: center;
-}
-.competencyMachine img{
+  }
+  .auto-description h3 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 23px;
+      font-weight: 300;
+      margin-left: 85px;
+      text-align: center;
+    }
+  .auto-content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 30px;
+    background-image: url(Images/bgmain.png);
+  }
+  
+  .auto-image {
+    flex: 1;
+  }
+  
+  .auto-image img {
     width: 650px;
-    padding-top: 10px;  
-    margin-left: 70px;  
-}
-.machine-description h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 500px;
+  }
+  
+  .auto-text {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 40px;
+    line-height: 2em;
+  }
+/* machine */
+.machineHeading h1 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #0b0162;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .machineHeading span {
+    color: #3776e4;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .machine-description h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 23px;
     font-weight: 300;
     margin-left: 85px;
     text-align: center;
-}
-.competencyIndustry img{
+  }
+  .machine-content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 30px;
+    background-image: url(Images/bgmain.png);
+  }
+  
+  .machine-image {
+    flex: 1;
+  }
+  
+  .machine-image img {
     width: 650px;
-    padding-top: 10px;  
-    margin-left: 70px;  
-}
-.industry-description h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 23px;
-    font-weight: 300;
-    margin-left: 85px;
+    height: 500px;
+  }
+  
+  .machine-text {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 40px;
+    line-height: 2em;
+  }
+/* industry 4.0 */
+.industryHeading h1 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #0b0162;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size: 50px;
     text-align: center;
-}
-.automation-description h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 23px;
-    font-weight: 300;
-    margin-left: 85px;
+    margin-bottom: 10px;
+  }
+  .industryHeading span {
+    color: #3776e4;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
     text-align: center;
+  }
+  .industry-description h3 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 23px;
+      font-weight: 300;
+      margin-left: 85px;
+      text-align: center;
+    }
+  .industry-content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 30px;
+    background-image: url(Images/bgmain.png);
+  }
+  
+  .industry-image {
+    flex: 1;
+  }
+  
+  .industry-image img {
+    width: 650px;
+    height: 500px;
+  }
+  
+  .industry-text {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 40px;
+    line-height: 2em;
+  }
+  /* die casting */
+.competencyIndustry img {
+  width: 650px;
+  padding-top: 10px;
+  margin-left: 70px;
 }
-.competencyAutomation img{
-    width: 600px;
-    padding-top: 20px;  
-    margin-left: 100px; 
+.industry-description h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  margin-left: 85px;
+  text-align: center;
 }
-.advengg-description h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 23px;
-    font-weight: 300;
-    margin-left: 85px;
-    text-align: center;
+.automation-description h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  margin-left: 85px;
+  text-align: center;
 }
-.competencyAdvEngg img{
-    width: 600px;
-    padding-top: 20px;  
-    margin-left: 100px; 
+.competencyAutomation img {
+  width: 600px;
+  padding-top: 20px;
+  margin-left: 100px;
 }
-.pd-description h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 23px;
-    font-weight: 300;
-    margin-left: 85px;
-    text-align: center;
+
+.competencyAdvEngg img {
+  width: 600px;
+  padding-top: 20px;
+  margin-left: 100px;
 }
-.competencyProDesign img{
-    width: 600px;
-    padding-top: 20px;  
-    margin-left: 100px; 
+
+.competencyProDesign img {
+  width: 600px;
+  padding-top: 20px;
+  margin-left: 100px;
 }
-.fd-description h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 23px;
-    font-weight: 300;
-    margin-left: 85px;
-    text-align: center;
+.fd-description h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  margin-left: 85px;
+  text-align: center;
 }
-.dmd-description h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 23px;
-    font-weight: 300;
-    margin-left: 85px;
-    text-align: center;
+.dmd-description h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  margin-left: 85px;
+  text-align: center;
 }
 /* social icons */
 .social-icons {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
 }
 
 .social-icons .logo {
-    margin-right: 800px;
-    display: flex;
-    align-items: center;
+  margin-right: 800px;
+  display: flex;
+  align-items: center;
 }
 
 .social-icons a {
-    margin-left: 15px;
-    color: #333;
-    font-size: 32px;
-    /* Increase the font size of the icons */
+  margin-left: 15px;
+  color: #333;
+  font-size: 32px;
+  /* Increase the font size of the icons */
 }
 
 .social-icons a:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .logo img {
-    height: 80px;
-    /* Adjust the height of the logo */
-    margin-left: 70px;
-    /* Margin between logo and icons */
+  height: 80px;
+  /* Adjust the height of the logo */
+  margin-left: 70px;
+  /* Margin between logo and icons */
 }
 
 /* footer */
 .footer {
-    background-image: linear-gradient(rgba(71, 78, 105, 0.436), rgba(4, 9, 30, 0.698)), url('Images/bg1.png');
-    height: 400px;
+  background-image: linear-gradient(
+      rgba(71, 78, 105, 0.436),
+      rgba(4, 9, 30, 0.698)
+    ),
+    url("Images/bg1.png");
+  height: 400px;
 }
 
 .col1,
 .col2,
 .address {
-    width: 400px;
-    display: inline-block;
-    vertical-align: top;
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .col1 h2 {
-    color: #fcf7f7;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    margin-left: 40px;
-    padding: 30px;
+  color: #fcf7f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  margin-left: 40px;
+  padding: 30px;
 }
 
 .col1 a {
-    margin-left: 80px;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
+  margin-left: 80px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
 }
 
 .col2 h2 {
-    color: #fcf7f7;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    margin-left: 40px;
-    padding: 30px;
+  color: #fcf7f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  margin-left: 40px;
+  padding: 30px;
 }
 
 .col2 a {
-    margin-left: 80px;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
+  margin-left: 80px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
 }
 
 .address p {
-    padding: 10px;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
+  padding: 10px;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
 }
 
 .address p span {
-    color: #8caeb9;
-    font-weight: 700;
-    text-transform: uppercase;
+  color: #8caeb9;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .address h2 {
-    color: #fcf7f7;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    margin-left: 40px;
-    padding: 30px;
+  color: #fcf7f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  margin-left: 40px;
+  padding: 30px;
 }
