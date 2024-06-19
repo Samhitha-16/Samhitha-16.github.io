@@ -42,6 +42,7 @@
   text-transform: uppercase;
 }
 
+
 /* overview */
 
 .overview {
@@ -107,6 +108,72 @@
   margin-bottom: 15px;
 }
 
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .overview h1 {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .overview-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .overview-image img {
+    width: 80%;
+    height: auto;
+    margin-left: 50px;
+  }
+  .overview-text {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .overview-text span {
+    font-size: 40px;
+  }
+  .overview-text p {
+    font-size: 15px;
+    line-height: 1.5rem;
+  }
+  .overview-text h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .overview h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .overview-content {
+    flex-direction: row;
+    padding: 15px;
+  }
+  .overview-image img {
+    width: 100%;
+    height: auto;
+  }
+  .overview-text {
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
+  .overview-text span {
+    font-size: 50px;
+  }
+  .overview-text p {
+    font-size: 15px;
+  }
+  .overview-text h3 {
+    font-size: 19px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
 
 
 /* PRODUCT SEGMENTS */
@@ -188,6 +255,80 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .prodSegment h1 {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  .prodSegment span {
+    font-size: 30px;
+  }
+  .prodSegment h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;  
+  }
+  .card {
+    width: 45%;
+    height: auto;
+    margin: 5px 0;
+    margin: 10px;
+  }
+  .card img {
+    width: 40px;
+    margin-left: 100px;
+    
+  }
+  .card-content h3 {
+    font-size: 18px;
+  }
+  .card-content p {
+    font-size: 16px;
+  }
+}
+
+
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .prodSegment h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .prodSegment span {
+    font-size: 40px;
+  }
+  .prodSegment h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .card-container {
+    justify-content: space-between;
+  }
+  .card {
+    position: relative;
+    width: 40%;
+    height: auto;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .card img {
+    width: 45px;
+    margin-left: 45%;
+  }
+  .card-content h3 {
+    font-size: 19px;
+  }
+  .card-content p {
+    font-size: 17px;
+  }
+}
+
 
 /* FACTS AND FIGURES */
 
@@ -222,11 +363,11 @@
 }
 
 .fig-container {
-  background-image: url("Images/Background1.png");
+  background-image: url("Images/bgmain.png");
   padding: 80px;
   display: flex;
   justify-content: space-around;
-  gap: 10px;
+  gap: 20px;
 }
 
 .fig-box {
@@ -263,6 +404,81 @@ span.text {
   text-align: center;
   margin-bottom: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .figures h1 {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  .figures span {
+    font-size: 30px;
+  }
+  .figures h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .fig-container {
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .fig-box {
+    width: 40%;
+    height: 40%;
+    margin: 10px 1%;
+  }
+  .fig-box img {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  span.num {
+    font-size: 25px;
+  }
+  span.text {
+    font-size: 16px;
+  }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .figures h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .figures span {
+    font-size: 40px;
+  }
+  .figures h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .fig-container {
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .fig-box {
+    width: 20%;
+    margin: 10px 0;
+  }
+  .fig-box img {
+    width: 18%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  span.num {
+    font-size: 30px;
+  }
+  span.text {
+    font-size: 17px;
+  }
 }
 
 /*  our strengths */
