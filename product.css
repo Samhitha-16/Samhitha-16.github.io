@@ -294,7 +294,7 @@
   }
 }
 /* small screen */
-@media (max-width: 767px) {
+@media (max-width: 767px)and (min-width:340px) {
   .products {
       height: 60px;
   }
