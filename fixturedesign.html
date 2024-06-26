@@ -19,14 +19,14 @@
 <body>
     <nav class="navbar">
         <ul class="nav-list">
-            <div class="logoMain"><img src="Images/logo.png" alt="logo"></div>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Competency</a><i class="fa fa-angle-down" aria-hidden="true"
-                    style="color: rgb(11, 11, 97); padding:10px;"></i>
+            <li><img src="Images/logo.png" alt=""></li>
+            <li class="hideOnMobile"><a href="aboutus.html">About US</a></li>
+            <li class="dropdown hideOnMobile">
+                <a href="#" class="dropbtn">Competency</a>
+                <i class="fa fa-angle-down" aria-hidden="true" style="color: rgb(0, 0, 0); padding: 10px"></i>
                 <div class="dropdown-content">
-                    <a href="#design">Design <i class="fa fa-angle-right" aria-hidden="true"
-                            style="color: rgb(11, 11, 97); margin-left: 90px;"></i></a>
+                    <a href="#design">Design
+                        <i class="fa fa-angle-right" aria-hidden="true" style="color: white; margin-left: 90px"></i></a>
                     <div class="sub-dropdown-content">
                         <a href="processdesign.html">Process Design</a>
                         <a href="fixturedesign.html">Fixure Desing</a>
@@ -38,10 +38,10 @@
                     <a href="industry.html">Industry 4.0</a>
                 </div>
             </li>
-            <li><a href="product.html">Products</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Infrastructure</a><i class="fa fa-angle-down" aria-hidden="true"
-                    style="color: rgb(11, 11, 97); padding:10px;"></i>
+            <li class="hideOnMobile"><a href="product.html">Products</a></li>
+            <li class="dropdown hideOnMobile">
+                <a href="#" class="dropbtn">Infrastructure</a>
+                <i class="fa fa-angle-down" aria-hidden="true" style="color: rgb(0, 0, 0); padding: 10px"></i>
                 <div class="dropdown-content">
                     <a href="manufunit.html">Manufacturing Units</a>
                     <a href="#">Die Casting</a>
@@ -49,27 +49,108 @@
                     <a href="#">Machine Building</a>
                     <a href="#">Concreteblock Moulds</a>
                     <a href="#">Digital Division</a>
-
+                </div>
+            </li>
+            <li class="hideOnMobile"><a href="#blog">Blogs</a></li>
+            <li class="hideOnMobile"><a href="news.html">News & Events</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact US</a></li>
+            <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                        viewBox="0 -960 960 960" width="26px" fill="#5f6368">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.nav-list-new');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const hidebar = document.querySelector('.nav-list-new');
+            hidebar.style.display = 'none';
+        }
+    </script>
+    <nav class="navbar">
+        <ul class="nav-list-new">
+            <li><img src="Images/logo.png" alt=""></li>
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="aboutus.html">About US</a></li>
+            <li class="dropdown-new">
+                <a href="#" class="dropbtn">Competency</a>
+                <i class="fa fa-angle-down" aria-hidden="true" style="color: rgb(0, 0, 0);"></i>
+                <div class="dropdown-content-new">
+                    <a href="#design">Design
+                        <i class="fa fa-angle-right" aria-hidden="true" style="color: white; margin-left: 90px"></i></a>
+                    <div class="sub-dropdown-content-new">
+                        <a href="processdesign.html">Process Design</a>
+                        <a href="fixturedesign.html">Fixure Desing</a>
+                        <a href="dmd.html">Die Mould Design</a>
+                    </div>
+                    <a href="advengg.html">Advanced Engineering</a>
+                    <a href="automation.html">Automation</a>
+                    <a href="machine.html">Machine</a>
+                    <a href="industry.html">Industry 4.0</a>
+                </div>
+            </li>
+            <li><a href="product.html">Products</a></li>
+            <li class="dropdown-new">
+                <a href="#" class="dropbtn">Infrastructure</a>
+                <i class="fa fa-angle-down" aria-hidden="true" style="color: rgb(0, 0, 0);"></i>
+                <div class="dropdown-content-new">
+                    <a href="manufunit.html">Manufacturing Units</a>
+                    <a href="#">Die Casting</a>
+                    <a href="#">Metrology</a>
+                    <a href="#">Machine Building</a>
+                    <a href="#">Concreteblock Moulds</a>
+                    <a href="#">Digital Division</a>
                 </div>
             </li>
             <li><a href="#blog">Blogs</a></li>
             <li><a href="news.html">News & Events</a></li>
             <li><a href="#contact">Contact US</a></li>
-        </ul>
 
+        </ul>
     </nav>
-    <section class="competencyHeading">
-        <h1>Fixture <span> Design </span></h1>
-        <div class="fd-description">
-            <h3>Objective of good Fixture Design in DPS is to Transfer Skill to Machine <br>( Easy loading, fool
-                proofing, Rigid Clamping and so on )
+    <section class="fixtureHeading">
+        <h1>Fixture<span> Design </span></h1>
+        <div class="fixture-description">
+            <h3>
+                Objective of good Fixture Design in DPS is to  Transfer Skill to Machine ( Easy loading, fool proofing, Rigid Clamping and so on )
+
             </h3>
         </div>
-        <div class="competencyFixtureDesign">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="fixture-content-wrap">
+            <div class="auto-image">
+                <img src="Images/fixturedesign.png" alt="process design Image" />
+            </div>
+            <div class="fixture-text">
+                <p>
+                    Fixture is like the front line warrior. It holds a crutial role in achieving productivity, rigid
+                    clamping, repeatability in accuracy , fool proofing and so on. When we get the fixture done through
+                    out side vendors / agencies, we tend to loose the insights in to the productivity aspects of the
+                    entire process. Also the development process may not be optimum as the productivity culture of the
+                    organization will not flow into the design ! So we make our own fixtures .
+
+
+                    <br />
+                    <br />
+                    • Experience of designing and developing more than 1000+ Fixtures 
+                    • Many standardized modules which reduces development lead time 
+                    • Competency in Hydraulic, Pneumatic and Manual fixtures depending on need.
+                    • Quick fixtures for proto components.
+                    • NX, Solid Works used extensively for design and development
+                    • In house tool room for critical operations.
+                    • Maximum care is taken in the design to transfer the skill to the machine from the operator 
+                    
+                </p>
+            </div>
         </div>
     </section>
+
 
     <!-- social icons -->
 
