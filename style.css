@@ -37,7 +37,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.875);
+  background-color: rgba(237, 237, 237, 0.875);
   display: flex;
   align-items: center;
 }
@@ -764,7 +764,8 @@ padding: 5px 0;
   text-align: center;
   margin-bottom: 30px;
 }
-.slider{
+
+.slider {
   height: 250px;
   margin: auto;
   position: relative;
@@ -773,65 +774,89 @@ padding: 5px 0;
   place-items: center;
   overflow: hidden;
 }
-.slide-track{
+
+.slide-track {
   display: flex;
-  /* width: calc(250px * 18); */
   width: auto;
   animation: scroll 40s linear infinite;
 }
+
 @keyframes scroll {
-  0%{
+  0% {
     transform: translateX(0);
   }
-  100%{
+  100% {
     transform: translateX(calc(-250px * 9));
   }
 }
-.slide { 
-  height: 200px;
+
+.slide {
+  height: 250px;
   width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 20px;
   perspective: 100px;
 }
-.slide img{
+
+/* Common card styles for card_cust and card_prod */
+.card_cust, .card_prod {
+  background-color: white;
   width: 200px;
-  height: 150px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.card_cust img, .card_prod img {
+  width: 80%; /* Adjust this value to reduce/increase the image size */
+  height: 80%; /* Adjust this value to reduce/increase the image size */
+  object-fit: contain;
   transition: transform 1s;
 }
-.slide img:hover{
-  transform: translateZ(20px);
+
+.card_cust img:hover, .card_prod img:hover {
+  transform: scale(1.1);
 }
+
 .slider::before,
-.slider::after{
-  background: linear-gradient(to right, rgb(255, 255, 255)0%,rgba(255,255,255,0)100%);
+.slider::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
   content: '';
   height: 100%;
   position: absolute;
   width: 15%;
   z-index: 2;
 }
-.slider::before{
+
+.slider::before {
   left: 0;
   top: 0;
 }
-.slider::after{
+
+.slider::after {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
 }
-@media (max-width: 768px){
-  .slide{
+
+@media (max-width: 768px) {
+  .slide {
     width: 40%;
   }
 }
-@media (max-width: 480px){
-  .slide{
+
+@media (max-width: 480px) {
+  .slide {
     width: 80%;
   }
 }
+
 /* our customer */
 
 .ourCust {
@@ -863,22 +888,58 @@ padding: 5px 0;
   text-align: center;
   margin-bottom: 30px;
 }
-.slide-cust{
-  height: 200px;
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 18); /* Adjust the total width based on the number of slides */
+  animation: scroll 20s linear infinite;
+}
+
+.slide-cust {
+  height: 250px;
   width: 250px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 15px;
-  perspective: 100px; 
 }
 
-.slide-cust img{
+.card_cust {
+  background-color: white;
   width: 200px;
-  height: 100px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.card_cust img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   transition: transform 1s;
 }
-.slide-cust img:hover{
-  transform: translateZ(20px);
+
+.card_cust img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9)); /* Adjust the translation based on the number of slides */
+  }
 }
 
 
@@ -1056,7 +1117,7 @@ padding: 5px 0;
 .footer {
   background-image: linear-gradient(
       rgba(71, 78, 105, 0.436),
-      rgba(4, 9, 30, 0.698)
+      rgba(5, 12, 37, 0.486)
     ),
     url("Images/bg1.png");
   height: 400px;
@@ -1076,6 +1137,7 @@ padding: 5px 0;
   font-weight: 400;
   margin-left: 40px;
   padding: 30px;
+
 }
 
 .col1 a {
@@ -1084,6 +1146,7 @@ padding: 5px 0;
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
+  line-height: 2rem;
 }
 
 .col2 h2 {
@@ -1100,6 +1163,7 @@ padding: 5px 0;
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
+  line-height: 2rem;
 }
 
 .address p {
@@ -1107,6 +1171,7 @@ padding: 5px 0;
   color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
+  line-height: 2rem;
 }
 
 .address p span {

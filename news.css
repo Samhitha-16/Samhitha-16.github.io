@@ -9,8 +9,6 @@
     background-size: cover;
     position: relative;
 }
-
-
 .nav-list, .nav-list-new {
   list-style: none;
   padding: 0;
@@ -204,6 +202,7 @@
     margin-left: auto;
   }
 }
+
 .news {
   height: 150px;
   width: 100%;
@@ -217,3 +216,134 @@
   padding: 50px;
   margin-left: 500px;
 }
+.slider-frame {
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+  margin-left: 360px;
+  margin-top: 20px;
+  position: relative;
+}
+
+@-webkit-keyframes slide_animation {
+  0% { left: 0px; }
+  1.25% { left: 0px; }
+  2.5% { left: -1200px; }
+  3.75% { left: -1200px; }
+  5% { left: -2400px; }
+  6.25% { left: -2400px; }
+  7.5% { left: -3600px; }
+  8.75% { left: -3600px; }
+  10% { left: -4800px; }
+  11.25% { left: -4800px; }
+  12.5% { left: -6000px; }
+  13.75% { left: -6000px; }
+  15% { left: -7200px; }
+  16.25% { left: -7200px; }
+  17.5% { left: -8400px; }
+  18.75% { left: -8400px; }
+  20% { left: -9600px; }
+  21.25% { left: -9600px; }
+  22.5% { left: -10800px; }
+  23.75% { left: -10800px; }
+  25% { left: -12000px; }
+  26.25% { left: -12000px; }
+  27.5% { left: -13200px; }
+  28.75% { left: -13200px; }
+  30% { left: -14400px; }
+  31.25% { left: -14400px; }
+  32.5% { left: -15600px; }
+  33.75% { left: -15600px; }
+  35% { left: -16800px; }
+  36.25% { left: -16800px; }
+  37.5% { left: -18000px; }
+  38.75% { left: -18000px; }
+  40% { left: -19200px; }
+  41.25% { left: -19200px; }
+  42.5% { left: -20400px; }
+  43.75% { left: -20400px; }
+  45% { left: -21600px; }
+  46.25% { left: -21600px; }
+  47.5% { left: -22800px; }
+  48.75% { left: -22800px; }
+  50% { left: -24000px; }
+  51.25% { left: -24000px; }
+  52.5% { left: -25200px; }
+  53.75% { left: -25200px; }
+  55% { left: -26400px; }
+  56.25% { left: -26400px; }
+  57.5% { left: -27600px; }
+  58.75% { left: -27600px; }
+  60% { left: -28800px; }
+  61.25% { left: -28800px; }
+  62.5% { left: -30000px; }
+  63.75% { left: -30000px; }
+  65% { left: -31200px; }
+  66.25% { left: -31200px; }
+  67.5% { left: -32400px; }
+  68.75% { left: -32400px; }
+  70% { left: -33600px; }
+  71.25% { left: -33600px; }
+  72.5% { left: -34800px; }
+  73.75% { left: -34800px; }
+  75% { left: -36000px; }
+  76.25% { left: -36000px; }
+  77.5% { left: -37200px; }
+  78.75% { left: -37200px; }
+  80% { left: -38400px; }
+  81.25% { left: -38400px; }
+  82.5% { left: -39600px; }
+  83.75% { left: -39600px; }
+  85% { left: -40800px; }
+  86.25% { left: -40800px; }
+  87.5% { left: -42000px; }
+  88.75% { left: -42000px; }
+  90% { left: -43200px; }
+  91.25% { left: -43200px; }
+  92.5% { left: -44400px; }
+  93.75% { left: -44400px; }
+  95% { left: -45600px; }
+  96.25% { left: -45600px; }
+  97.5% { left: -46800px; }
+  98.75% { left: -46800px; }
+  100% { left: -48000px; }
+}
+
+.slide-images {
+  width: 96000px; 
+  height: 800px;
+  margin: 0;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 320s; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+.img-container {
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
+}
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
