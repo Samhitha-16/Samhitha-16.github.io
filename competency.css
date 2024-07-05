@@ -38,7 +38,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.875);
+  background-color: rgba(237, 237, 237, 0.875);
   display: flex;
   align-items: center;
 }
@@ -102,27 +102,27 @@
 
 .dropdown-content {
   margin-top: 10px;
-  border: 2px solid #fff;
+  border: 2px solid #010000;
   display: none;
   position: absolute;
-  background-color: rgba(214, 217, 237, 0.875);
+  background-color: rgba(255, 255, 255, 0.832);
   min-width: 160px;
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 12px 16px;
   display: block;
   text-align: left;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 600;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: lowercase;
 }
 
 .dropdown-content a:hover {
-  background-color: #6f6f76c8;
+  background-color: #8fa0b9c8;
   color: black;
 }
 
@@ -133,8 +133,8 @@
 .sub-dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(214, 217, 237, 0.875);
-  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.832);
+  border: 2px solid #000000;
   min-width: 160px;
   left: 100%;
   top: 0;
@@ -154,7 +154,7 @@
   border: 2px solid #000000;
   display: none;
   position: absolute;
-  background-color: rgba(214, 217, 237, 0.875);
+  background-color: rgba(255, 255, 255, 0.832);
   min-width: 100px;
   z-index: 1;
 }
@@ -171,7 +171,7 @@
 }
 
 .dropdown-content-new a:hover {
-  background-color: #6f6f76c8;
+  background-color: #8fa0b9c8;
   color: black;
 }
 
@@ -182,8 +182,8 @@
 .sub-dropdown-content-new {
   display: none;
   position: absolute;
-  background-color: rgba(214, 217, 237, 0.875);
-  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.832);
+  border: 2px solid #0a0606;
   min-width: 160px;
   left: 100%;
   top: 0;
