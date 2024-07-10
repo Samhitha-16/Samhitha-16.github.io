@@ -17,7 +17,7 @@
   padding: 0;
 }
 
-.nav-list li img, .nav-list-new li img {
+.nav-list li img, .nav-list-new li img { 
   width: 50%;
   display: flex;
   justify-content: center;
