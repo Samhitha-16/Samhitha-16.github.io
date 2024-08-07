@@ -443,63 +443,503 @@
   margin-left: 600px;
 }
 /* hydraulic gearpump */
-.products_hydraulic_gear_pumps{
-  height: 100px;
-  width: 100%;
-  background-image: linear-gradient(rgba(42, 46, 64, 0.581), rgba(13, 27, 83, 0.813)), url('Images/abtusbg.jpg');
-}
-.products_hydraulic_gear_pumps h1 {
-  font-size: 50px;
-  font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgba(233, 233, 243, 0.833);
-  padding: 10px;
-  margin-left: 450px;
-}
-.hgp_container{
-  background: url(Images/bgmain.png);
-  height: 600px;
+.hgp-container{
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  overflow: hidden;
-}
-.slider{
-  position: relative;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  animation: rotate 30s linear infinite;
-}
-@keyframes rotate{
-  0%{
-    transform: perspective(1000px) rotateY(0deg);
-  }
-  100%{
-    transform: perspective(1000px) rotateY(360deg);
-  }
-}
-.slider span{
-  position: absolute;
-  background-color: white;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
-}
-.slider span img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   align-items: center;
-  border-radius: 100px;
+  text-align: center;
+  margin-top: 20px 20px 0 20px;background-color: rgba(200, 231, 236, 0.692);
+}
+.hgp-container .heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.hgp-container .heading h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.hgp-container .heading span{
+  font-weight: 200;
+  font-style: italic;
+}
+.hgp-container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+.hgp-container .box .hgp-pictures{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.hgp-pictures img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  transition: 2s;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+/* hydraulics */
+.hyd-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px 20px 0 20px;background-color: rgba(200, 231, 236, 0.692);
+}
+.hyd-container .heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 30%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.hyd-container .heading h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.hyd-container .heading span{
+  font-weight: 200;
+  font-style: italic;
+}
+.hyd-container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+.hyd-container .box .hyd-pictures{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.hyd-pictures img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+/* forklift */
+.fl-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px 20px 0 20px;background-color: rgba(200, 231, 236, 0.692);
+}
+.fl-container .heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 30%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.fl-container .heading h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.fl-container .heading span{
+  font-weight: 200;
+  font-style: italic;
+}
+.fl-container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+.fl-container .box .fl-pictures{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.fl-pictures img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+/* machine tools */
+.mt-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px 20px 0 20px;background-color: rgba(200, 231, 236, 0.692);
+}
+.mt-container .heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 30%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.mt-container .heading h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.mt-container .heading span{
+  font-weight: 200;
+  font-style: italic;
+}
+.mt-container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+.mt-container .box .mt-pictures{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.mt-pictures img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+/* ground care */
+.gc-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px 20px 0 20px;background-color: rgba(200, 231, 236, 0.692);
+}
+.gc-container .heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 30%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.gc-container .heading h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.gc-container .heading span{
+  font-weight: 200;
+  font-style: italic;
+}
+.gc-container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+.gc-container .box .gc-pictures{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.gc-pictures img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+/* compressor parts */
+.cp-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px 20px 0 20px;background-color: rgba(200, 231, 236, 0.692);
+}
+.cp-container .heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.cp-container .heading h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.cp-container .heading span{
+  font-weight: 200;
+  font-style: italic;
+}
+.cp-container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+.cp-container .box .cp-pictures{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.cp-pictures img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+/* solar */
+.solar-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px 20px 0 20px;background-color: rgba(200, 231, 236, 0.692);
+}
+.solar-container .heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.solar-container .heading h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.solar-container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+.solar-container .box .solar-pictures{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.solar-pictures img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* prototyping */
+.proto-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px 20px 0 20px;background-color: rgba(200, 231, 236, 0.692);
+}
+.proto-container .heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.proto-container .heading h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.proto-container .heading span{
+  font-weight: 200;
+  font-style: italic;
+}
+.proto-container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+.proto-container .box .proto-pictures{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.proto-pictures img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+/* hydrogen */
+.hydro-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px 20px 0 20px;background-color: rgba(200, 231, 236, 0.692);
+}
+.hydro-container .heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.hydro-container .heading h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.hydro-container .heading span{
+  font-weight: 200;
+  font-style: italic;
+}
+.hydro-container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+.hydro-container .box .hydro-pictures{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.hydro-pictures img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+/* automotives */
+.am-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px 20px 0 20px;background-color: rgba(200, 231, 236, 0.692);
+}
+.am-container .heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.am-container .heading h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.am-container .heading span{
+  font-weight: 200;
+  font-style: italic;
+}
+.am-container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+.am-container .box .am-pictures{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.am-pictures img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.back-btn{
+  display: flex;
+  position: absolute;
+  margin: 40px;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px;
 }
 /* social icons */
 .social-icons {

@@ -260,35 +260,8 @@
   background-image: url(Images/bgmain.png);
 }
 
-.abtus-image {
-  flex: 1;
-}
 
-.abtus-image img {
-  width: 700px;
-  height: 400px;
-}
 
-.abtus-text-below {
-  flex: 1;
-  margin-left: 40px;
-  margin-right: 40px;
-  line-height: 2em;
-}
-
-.abtus-text-below span {
-  font-size: 40px;
-  color: #000;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.abtus-text-below p {
-  text-align: justify;
-  color: #000;
-  padding: 4px;
-  font-size: 18px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 /* Medium screens */
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
   .abtus h1 {
@@ -300,18 +273,40 @@
   .abtus-text {
     padding: 20px 50px;
   }
-  .abtus-image img {
-    width: 100%;
-    height: auto;
-  }
-  .abtus-text-below span {
-    font-size: 30px;
-  }
-  .abtus-text-below p {
-    font-size: 16px;
-  }
+ 
 }
+.abtus-container{
+  width: 1000px;
+  margin-left: 150px;
+  height: 440px;
+  background-color: #fff;
+  padding: 2rem 2rem;
+  position: relative;
+  background: linear-gradient(rgba(167, 180, 185, 0.381),rgba(124, 140, 124, 0.397));
+}
+.abtus-textblock{
+  width: 70%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+.abtus-textblock span{
+  font-weight: 600;
+  font-size: 40px;
+}
+.abtus-textblock p{
+  margin-top: 50px;
+  font-size: 18px;
+  justify-content: right;
+  line-height: 2rem;
 
+}
+.abtus-container img{
+  position: absolute;
+  top: 10%;
+  right: -25%;
+  height: 350px;
+  
+}
 /* Small screens */
 @media only screen and (max-width: 600px) {
   .abtus {
